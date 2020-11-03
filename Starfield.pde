@@ -19,9 +19,9 @@ Particle[] carl;
    {
      carl[i].show();
    }
-   for (int i = 1; i < carl.length; i++)
+   for (int j = 1; j < carl.length; j++)
    {
-     carl[i].move();
+     carl[j].move();
    }
  }  
  void mousePressed()
@@ -83,10 +83,10 @@ class Oddball extends Particle
     line(232, 240, 265, 240);
     line(240, 240, 240, 265);
     line(257, 240, 257, 265);
-    stroke(0, 255, 0);
+    stroke(210, 105, 30);
     noFill();
-    arc(285, 215, 70, 70, PI, PI+QUARTER_PI);
-    fill(0, 255, 0);
-    arc(223, 222, 70, 70, PI+HALF_PI, PI+QUARTER_PI+QUARTER_PI+QUARTER_PI, CHORD);
+    arc(285, 215, 70, 70, (float)Math.PI, (float)Math.PI+(float)(0.2 * Math.PI));
+    stroke(0, 255, 0);
+    arc(225, 225, 70, 70, (float)Math.PI+(float)(0.6 * Math.PI), (float)Math.PI+(float)(0.75 * Math.PI));
   }
 }
