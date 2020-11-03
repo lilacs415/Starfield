@@ -61,7 +61,6 @@ class Particle
     mySpeed = Math.random() * 10 + 3;
     myX = 250;
     myY = 250;
-    background(0);
   }
 }
 class Oddball extends Particle
